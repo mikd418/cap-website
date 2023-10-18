@@ -24,80 +24,51 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <title>Meeting Makers</title>
-  <nav> 
-    <a href="index.html"> Home Page</a>
-    <a href="userHome.html">User Home Page </a>
-    <a href="loginpage.html"> Login</a>
-  </nav>
-  
+    <title>Proxy Detector</title>
     <link rel="stylesheet" href="css/style.css">
   
   </head>
 
   <div class="container">
   <form action="action_page.php">
-<!-- Organization inputs-->
-    <label for="oname">Company Name</label>
-    <input type="text" id="oname" name="oname" placeholder="Company name">
 
-    <label for="oaddress">Company Address</label>
-    <input type="text" id="oaddress" name="oaddress" placeholder="Company street address">
+    <label for="sLocation">Where is your server located?</label>
+    <input type="text" id="sLocation" name="sLocation" placeholder="Server Location">
 
-    <label for="ocity">City</label>
-    <input type="text" id="ocity" name="ocity" placeholder="City">
+    <label for="SIP">Server IP</label>
+    <input type="text" id="sip" name="sip" placeholder="Server IP">
 
-    <label for="ostate">State</label>
-    <input type="text" id="ostate" name="ostate" placeholder="State">
+    <label for="cDistance">Whats the Distance from you to the Proxy?</label>
+    <input type="text" id="cdistance" name="cdistance" placeholder="Client Distance">
 
-    <label for="ozip">Zipcode</label>
-    <input type="text" id="ozip" name="ozip" placeholder="Zipcode">
+    <label for="pDistance">Whats the Distance from the Proxy to the RTT Server?</label>
+    <input type="text" id="pdistance" name="pdistance" placeholder="Proxy Distance">
 
-    <label for="oemail">Email</label>
-    <input type="text" id="oemail" name="oemail" placeholder="Contact Email">
+    <label for="cISP">Whats your ISP</label>
+    <input type="text" id="cisp" name="cisp" placeholder="Client ISP">
 
-    <label for="ophone">Phone</label>
-    <input type="text" id="ophone" name="ophone" placeholder="Contact Phone number">
+    <label for="pISP">Whats the Proxy ISP</label>
+    <input type="text" id="pisp" name="psip" placeholder="Proxy ISP">
 
-<!-- Conference inputs-->
-    <label for="cname">Conference Name</label>
-    <input type="text" id="cname" name="cname" placeholder="Conference name">
+    <label for="sISP">Whats the Server ISP</label>
+    <input type="text" id="sISP" name="sISP" placeholder="Server ISP">
 
-    <label for="cstart">Conference Start Date</label>
-    <input type="date" id="cstart" name="cstart" placeholder="Start Date">
-<br>
-<br>
-    <label for="cend">Conference End Date</label>
-    <input type="date" id="cend" name="cend" placeholder="End Date">
-<br>
-<br>
-    <label for="ccity">Conference City</label>
-    <input type="text" id="ccity" name="ccity" placeholder="Conference City">
+    <div id="wrapper">
+      <label for="yes_no_radio">Is this a transatlantic connection?</label>
+    <p>
+    <input type="radio" name="yes_no" checked>Yes</input>
+    </p>
+    <p>
+    <input type="radio" name="yes_no">No</input>
+    </p>
+    </div>
 
-    <label for="cfee">Fee</label>
-    <input type="text" id="cfee" name="cfee" placeholder="Conference Attendance Fee">
+    <br>
+    <br>
 
-    <label for="cattendance">Conference Attendance</label>
-    <input type="text" id="cattendance" name="cattendance" placeholder="Estimated Conference Attendance">
-
-    <label for="budget">Budget</label>
-    <select id="budget" name="budget">
-      <option value="50,000">under $50,000</option>
-      <option value="75,000">$50,000 - $75,000</option>
-      <option value="100,000">$75,000 - $100,000</option>
-      <option value="125,000">$100,000 - $125,000</option>
-      <option value="150,000">$125,000 - $150,000</option>
-      <option value="150,000+">Above $150,000</option>
-    </select>
-
-      <!-- Not sure how to do attendees - do we need to? -->
-
-      <!-- Didn't include hotel - do we need to? -->
-
-    <label for="subject">Extra Info</label>
-    <textarea id="subject" name="subject" placeholder="Anything else we need to know.." style="height:200px"></textarea>
-
-    <input type="submit" value="Submit">
+    <a href="eventinput.html">
+      <button>Test My Proxy</button>
+    </a>
 
   </form>
 </div>

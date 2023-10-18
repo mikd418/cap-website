@@ -63,6 +63,12 @@ h2 {
   color:#b95353;
 }
 
+#wrapper
+{
+  padding:20px;
+  font-family: "Lato";
+}
+
 
 /* The root rule is the foundation for the whole page. These settings _cascade_
 to all elements unless they are overridden. */
