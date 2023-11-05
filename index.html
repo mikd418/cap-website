@@ -12,6 +12,7 @@
 
    <body onload = "welcomeFunction()" >
       <h2> Let's test some proxies. </h2>
+      <div></div>
       <div id="message"></div>
       <script type="text/javascript">
        let message = document.getElementById("message");
@@ -20,7 +21,7 @@
           message.innerHTML = "Welcome! :)"
        }
       </script>
-       <button onclick="goToPage2()">Are you being proxied?</button>
+        <button style="display: block; margin: 0 auto;" onclick="goToPage2">Are you being proxied?</button>
 
        <script>
            function goToPage2() {

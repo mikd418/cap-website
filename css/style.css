@@ -27,7 +27,7 @@ p2 {
 
 h2 {
   font-size: 1.8em;
-  padding: 10px 0;
+  padding: 20px 0;
   margin: 0;
   font-weight: 400;
   font-family: 'Lato';
@@ -44,6 +44,13 @@ h2 {
 
 .formatty {
   text-align: left;
+}
+
+img {
+  display: block; 
+  margin: 0 auto;
+  width:500px;
+  height:500px;
 }
 
 
@@ -74,9 +81,9 @@ h2 {
 to all elements unless they are overridden. */
 :root {
 	/* Change these variables according to your theme */
-	--primary: #c72e0f;
-	--accent: #b53232;
-	--delete: #82ada9;
+	--primary: #1b0fc7;
+	--accent: #003bb0;
+	--delete: #5f7db4;
 	--primary-text: #ffffff;
 
 	/* Window background and default font */
@@ -96,7 +103,7 @@ body {
 }
 
 nav {
-    background-color: #a56464;
+    background-color: #2a2afb;
     overflow: hidden;
 }
 
