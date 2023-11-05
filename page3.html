@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Proxy Testers</title>
+  <nav> 
+    <a href="index.html"> Home Page</a>
+    <a href="page1.html">Page 1 </a>
+    <a href="page2.html"> Page 2</a>
+    <a href="page3.html"> Page 3</a>
+  </nav>
+
+    <link rel="stylesheet" href="css/style.css">
+
+  </head>
+
+  <body onload = "welcomeFunction()" >
+    <h2> Here are your Results! </h2>
+    <div id="message"></div>
+    <script type="text/javascript">
+     let message = document.getElementById("message");
+     function welcomeFunction() {
+        alert( "Thanks for testing with us!" );
+        message.innerHTML = "Here you go..."
+     }
+    </script>
+     <button onclick="goToPage2()">Test Again!</button>
+
+     <script>
+         function goToPage2() {
+             window.location.href = 'index.html';
+         }
+     </script>
+ </body>
+
+</html>

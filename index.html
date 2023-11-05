@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="css/style.css">
+    <nav> 
+      <a href="index.html"> Home Page</a>
+      <a href="page1.html">Page 1 </a>
+      <a href="page2.html"> Page 2</a>
+      <a href="page3.html"> Page 3</a>
+    </nav>  
+  </head>
+
+   <body onload = "welcomeFunction()" >
+      <h2> Let's test some proxies. </h2>
+      <div id="message"></div>
+      <script type="text/javascript">
+       let message = document.getElementById("message");
+       function welcomeFunction() {
+          alert( "Let's test some proxies!!!" );
+          message.innerHTML = "Welcome! :)"
+       }
+      </script>
+       <button onclick="goToPage2()">Are you being proxied?</button>
+
+       <script>
+           function goToPage2() {
+               window.location.href = 'page1.html';
+           }
+       </script>
+   </body>
+
+
+</html>
