@@ -34,6 +34,15 @@ h2 {
   text-align: left;
 }
 
+h4 {
+  font-size: 1.0em;
+  padding: 5px 0;
+  margin: 0;
+  font-weight: 400;
+  font-family: 'Lato';
+  text-align: left;
+}
+
 .header {
   width: 100%;
   padding:60px 0;

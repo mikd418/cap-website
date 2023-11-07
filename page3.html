@@ -13,18 +13,134 @@
 
   </head>
 
-  <body onload = "welcomeFunction()" >
+  <body onload="myFunction()">
     <h2> Here are your Results! </h2>
-    <div id="message"></div>
-    <script type="text/javascript">
-     let message = document.getElementById("message");
-     function welcomeFunction() {
-        alert( "Thanks for testing with us!" );
-        message.innerHTML = "Here you go..."
-     }
     </script>
 
-    <h3> Insert TCP/TLS RTT time info from previous capstone project or display something new. </h3>
+    <table border="1">
+      <tr>
+        <td><h4>Rtt:</h4></td>
+        <td><span id="tcpi_rtt"></span></td>
+      </tr>
+      <tr>
+        <td><h4>Rttvar:</h4></td>
+        <td><span id="tcpi_rttvar"></span></td>
+      </tr>
+      <tr>
+        <td><h4>Snd_cwnd:</h4></td>
+        <td><span id="tcpi_snd_cwnd"></span></td>
+      </tr>
+      <tr>
+        <td><h4>Rcv_space:</h4></td>
+        <td><span id="tcpi_rcv_space"></span></td>
+      </tr>
+      <tr>
+        <td><h4>Options:</h4></td>
+        <td><span id="tcpi_options"></span></td>
+      </tr>
+      <tr>
+        <td><h4>Ca_state:</h4></td>
+        <td><span id="tcpi_ca_state"></span></td>
+      </tr>
+      <tr>
+        <td><h4>State:</h4></td>
+        <td><span id="tcpi_state"></span></td>
+      </tr>
+      <tr>
+        <td><h4>Retransmits:</h4></td>
+        <td><span id="tcpi_retransmits"></span></td>
+      </tr>
+      <tr>
+        <td><h4>Probes:</h4></td>
+        <td><span id="tcpi_probes"></span></td>
+      </tr>
+      <tr>
+        <td><h4>Backoff:</h4></td>
+        <td><span id="tcpi_backoff"></span></td>
+      </tr>
+      <tr>
+        <td><h4>Snd_wscale:</h4></td>
+        <td><span id="tcpi_snd_wscale"></span></td>
+      </tr>
+      <tr>
+        <td><h4>Rcv_wscale:</h4></td>
+        <td><span id="tcpi_rcv_wscale"></span></td>
+      </tr>
+      <tr>
+        <td><h4>Rto:</h4></td>
+        <td><span id="tcpi_rto"></span></td>
+      </tr>
+      <tr>
+        <td><h4>Ato:</h4></td>
+        <td><span id="tcpi_ato"></span></td>
+      </tr>
+      <tr>
+        <td><h4>Snd_mss:</h4></td>
+        <td><span id="tcpi_snd_mss"></span></td>
+      </tr>
+      <tr>
+        <td><h4>Rcv_mss:</h4></td>
+        <td><span id="tcpi_rcv_mss"></span></td>
+      </tr>
+      <tr>
+        <td><h4>Unacked:</h4></td>
+        <td><span id="tcpi_unacked"></span></td>
+      </tr>
+      <tr>
+        <td><h4>Sacked:</h4></td>
+        <td><span id="tcpi_sacked"></span></td>
+      </tr>
+      <tr>
+        <td><h4>Lost:</h4></td>
+        <td><span id="tcpi_lost"></span></td>
+      </tr>
+      <tr>
+        <td><h4>Retrans:</h4></td>
+        <td><span id="tcpi_retrans"></span></td>
+      </tr>
+      <tr>
+        <td><h4>Fackets:</h4></td>
+        <td><span id="tcpi_fackets"></span></td>
+      </tr>
+      <tr>
+        <td><h4>Last_data_sent:</h4></td>
+        <td><span id="tcpi_last_data_sent"></span></td>
+      </tr>
+      <tr>
+        <td><h4>Last_ack_sent:</h4></td>
+        <td><span id="tcpi_last_ack_sent"></span></td>
+      </tr>
+      <tr>
+        <td><h4>Last_data_recv:</h4></td>
+        <td><span id="tcpi_last_data_recv"></span></td>
+      </tr>
+      <tr>
+        <td><h4>Last_ack_recv:</h4></td>
+        <td><span id="tcpi_last_ack_recv"></span></td>
+      </tr>
+      <tr>
+        <td><h4>Pmtu:</h4></td>
+        <td><span id="tcpi_pmtu"></span></td>
+      </tr>
+      <tr>
+        <td><h4>Rcv_ssthresh:</h4></td>
+        <td><span id="tcpi_rcv_ssthresh"></span></td>
+      </tr>
+      <tr>
+        <td><h4>Snd_ssthresh:</h4></td>
+        <td><span id="tcpi_snd_ssthresh"></span></td>
+      </tr>
+      <tr>
+        <td><h4>Advmss:</h4></td>
+        <td><span id="tcpi_advmss"></span></td>
+      </tr>
+      <tr>
+        <td><h4>Reordering:</h4></td>
+        <td><span id="tcpi_reordering"></span></td>
+      </tr>
+    </table>
+    
+
      <button style = "display: block; margin: 0 auto;" onclick="goToPage2()">Test Again!</button>
 
      <script>
